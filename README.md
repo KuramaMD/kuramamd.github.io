@@ -2,6 +2,6 @@
 
 # kuramamd.github.io
 
-Google.com
+www.Google.com
 
 https://mail.google.com/mail/u/0/#inbox
