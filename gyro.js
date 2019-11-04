@@ -37,5 +37,5 @@ function on_acc_data_uab(e) {
     document.getElementById("id_rotatie_x").innerHTML = Math.round(rotatie_x * 100) / 100;
     document.getElementById("id_rotatie_y").innerHTML = Math.round(rotatie_y * 100) / 100;
 
-    // deseneaza(e.rotatie_x, e.rotatie_y);
+    deseneaza(e.rotatie_x, e.rotatie_y);
 }
