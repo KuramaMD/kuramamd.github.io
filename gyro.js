@@ -21,7 +21,7 @@ function on_gyro_data_uab(e) {
     document.getElementById("id_beta").innerHTML = Math.round(e.beta * 100) / 100;
     document.getElementById("id_gamma").innerHTML = Math.round(e.gamma * 100) / 100;
 
-    deseneaza(e.beta, e.gamma);
+    deseneaza(e.gamma, e.beta);
 }
 
 function on_acc_data_uab(e) {
