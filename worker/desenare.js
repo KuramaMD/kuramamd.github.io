@@ -3,6 +3,8 @@ document.getElementById("id_start").addEventListener("click", start);
 document.getElementById("id_stop").addEventListener("click", stop);
 
 var timer_id;
+var unghi = {};
+unghi.valoare = 0;
 
 function desenare(unghi) {
     var canvas = document.getElementById("id_canvas");
@@ -26,8 +28,6 @@ function desenare(unghi) {
 function start() {
     document.getElementById("id_start").disabled = true;
     document.getElementById("id_stop").disabled = false;
-    var unghi = {};
-    unghi.valoare = 0;
     timer_id = setInterval(desenare, 20, unghi);
 }
 
