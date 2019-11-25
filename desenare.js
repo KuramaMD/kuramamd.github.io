@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML = "2019.11.25.0";
+document.getElementById("id_logic").innerHTML = "2019.11.25.1";
 document.getElementById("id_start").addEventListener("click", start);
 document.getElementById("id_stop").addEventListener("click", stop);
 
