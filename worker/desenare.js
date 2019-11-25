@@ -1,6 +1,8 @@
-document.getElementById("id_logic").innerHTML = "2019.11.25.2";
+document.getElementById("id_logic").innerHTML = "2019.11.25.3";
 document.getElementById("id_start").addEventListener("click", start);
 document.getElementById("id_stop").addEventListener("click", stop);
+
+var timer_id;
 
 function desenare(unghi) {
     var canvas = document.getElementById("id_canvas");
@@ -22,12 +24,16 @@ function desenare(unghi) {
 }
 
 function start() {
+    document.getElementById("id_start").disabled = true;
+    document.getElementById("id_stop").disabled = false;
     var unghi = {};
     unghi.valoare = 0;
-    setInterval(desenare, 20, unghi);
+    timer_id = setInterval(desenare, 20, unghi);
 }
 
 function stop() {
+    document.getElementById("id_start").disabled = false;
+    document.getElementById("id_stop").disabled = true;
 
-
+    clearInterval(timer_id);
 }
