@@ -7,7 +7,7 @@ function deseneaza (unghi_x, unghi_y) {
     // obtinem context grafic, construim o cale, adaugam un cerc la cale, desenam calea
    var circle = document.getElementById("id_circle");
    var svg = document.getElementById("id_svg");
-   circle.getAttribute("r");
+   var r = circle.getAttribute("r");
    //var context = canvas.getContext("2d");
    //var r = 10;
    //context.clearRect(0, 0, canvas.width, canvas.height);
