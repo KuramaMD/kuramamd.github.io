@@ -2,6 +2,8 @@ document.getElementById("id_version").innerHTML = "Logic 2019-12-02.0";
 
 window.addEventListener("touchstart", touch_start_uab);
 window.addEventListener("touchmove", touch_move_uab);
+window.addEventListener("touchend", touch_end_uab);
+
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
@@ -57,3 +59,15 @@ function touch_move_uab(p) {
       context.stroke(); 
     }
 }
+
+function touch_end_uab(p) {
+    var t = p.changedTouches; // lista degetelor care se ridica
+    for (var i = 0; i < t.length; i++) {
+        for (var j = 0; i < last_position.length; j++)
+       if (last_position[j].id == t[i].indentifier){
+           index_t = j;
+           break;
+       }
+       last_position.splice(index_t, 1);
+    }
+}     
