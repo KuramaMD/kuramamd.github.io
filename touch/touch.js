@@ -60,8 +60,8 @@ function touch_move_uab(p) {
       context.lineWidth = 20;
         context.fill();
       context.stroke(); 
-      last_position[index_t].x = t[i].pageX;
-      last_position[index_t].y = t[i].pageY;
+      last_position[index_t].x  = t[i].pageX - canvas_rect.left;
+      last_position[index_t].y = t[i].pageY - canvas_rect.top;
      }
 }
 
