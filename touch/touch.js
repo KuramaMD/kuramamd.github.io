@@ -1,7 +1,7 @@
-document.getElementById("id_version").innerHTML = "Logic 2019-12-02.1";
+document.getElementById("id_version").innerHTML = "Logic 2019-12-02.2";
 
 window.addEventListener("touchstart", touch_start_uab);
-window.addEventListener("touchmove", touch_move_uab);
+window.addEventListener("touchmove", touch_move_uab, (passive=false));
 window.addEventListener("touchend", touch_end_uab);
 
 
@@ -44,6 +44,7 @@ function touch_start_uab(p) {
 }
 
 function touch_move_uab(p) {
+    p.preventDefault();
     var t = p.changedTouches;
     for (var i = 0; i < t.length; i++) {
         for (var j = 0; i < last_position.length; j++)
