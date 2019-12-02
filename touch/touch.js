@@ -1,4 +1,4 @@
-document.getElementById("id_version").innerHTML = "Logic 2019-12-02.2";
+document.getElementById("id_version").innerHTML = "Logic 2019-12-02.2.1";
 
 window.addEventListener("touchstart", touch_start_uab);
 window.addEventListener("touchmove", touch_move_uab, (passive=false));
