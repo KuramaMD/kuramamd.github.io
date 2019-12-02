@@ -32,7 +32,7 @@ function touch_start_uab(p) {
         touch_info_color = get_random_color();
 
         context.beginPath();
-        context.arc(t[i].pageX = canvas_rect.left1, t[i].pageY = canvas_rect.top,10, 0, 2 * Math.PI);
+        context.arc(t[i].pageX = canvas_rect.left, t[i].pageY = canvas_rect.top,10, 0, 2 * Math.PI);
         context.strokeStyle = touch_info_color;
         context.fillStyle = touch_info_color;
         context.lineWidth = 1;
