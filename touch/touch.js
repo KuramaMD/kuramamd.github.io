@@ -10,7 +10,7 @@ function touch_start_uab(p) {
     var t = p.changedTouches;
     for (var i = 0; i < t.length; i++) {
         context.beginPath();
-        context.arc(x, y, t, 0, 2 * Math.PI);
+        context.arc(x, y, r, 0, 2 * Math.PI);
         context.stroke();
     }
 }
