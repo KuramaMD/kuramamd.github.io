@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html >
 <body>
+
   <!--<script src="drawer.js"></script>-->
   <link rel="stylesheet" href="style.css"/>
 
@@ -13,6 +14,22 @@
   </div>
 
   <span style="font-size:30px" onclick="openNav()">&#9776;</span>
+<br>
+  <script>
+    function myFunction()
+     {
+      var x = document.getElementById("fname");
+var div = document.getElementById('divID');
+div.innerHTML = x.value;    
+     }
+ </script>
+ </head>
+ <body>
+ 
+ Enter your name: <input type="text" id="fname"> <button onclick="myFunction(), document.getElementById('fname').value = ''">Submit</button>
+ <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+ 
+ <div id="divID"></div>
 
   <script>
   function openNav() {
