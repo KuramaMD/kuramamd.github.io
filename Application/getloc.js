@@ -2,22 +2,22 @@ var map, infoWindow;
 var Markers = {};
 	   var locations = [
 		 [
-				'Samsung Store Madeleine',
-				'<strong>Boston</strong><p>5 Boulevard Malesherbes, 75008 Paris<br>10h – 20h</p>',
-				48.8701925,
-				2.322897600000033,
+				'Cluj-Napoca',
+				'<strong>USAMV Cluj-Napoca</strong><p>Universitatea de Stiinte Agricole si Medicina Veterinara</p><br><a href="https://www.usamvcluj.ro">www.usamvcluj.ro</a>',
+				46.75944,
+				23.57083,
 				0
 		],
 		[
 			   'Brasov',
-			   '<strong>Boston</strong><p>5 Boulevard Malesherbes, 75008 Paris<br>10h – 20h</p>',
+			   '<strong>Universitatea Transilvania</strong><p>Universitatea Transilvania</p><br><a href="https://www.unitbv.ro/">www.unitbv.ro/</a>',
 			   45.65500000,
 			   25.59666667,
 				1
 		],
 		[
 			'Alba',
-		    '<strong>1 Decembrie 1918</strong><p>5 Boulevard Malesherbes, 75008 Paris<br>10h – 20h</p>',
+		    '<strong>Universitatea 1 Decembrie 1918</strong><p>Universitatea 1 Decembrie 1918</p><br><a href="https://uab.ro">uab.ro</a>',
 			   46.0691,
 			   23.5725,
 				  2
