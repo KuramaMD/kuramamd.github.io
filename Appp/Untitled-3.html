@@ -1,0 +1,21 @@
+    <!DOCTYPE html>
+<html>
+<head>
+<script>
+   function myFunction()
+    {
+        var input = document.getElementById('fname')
+        var div = document.getElementById('divID');
+        div.innerHTML = div.innerHTML + input.value;
+    }
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname"> <button onclick="myFunction(), document.getElementById('fname').value = ''">Submit</button>
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<div id="divID"></div>
+
+</body>
+</html>

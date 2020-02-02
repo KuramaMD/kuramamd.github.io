@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+    <!--<script src="drawer.js"></script>-->
+    <link rel="stylesheet" href="style.css"/>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+<!--<div class= "cont">
+
+  <form action="/action_page.php" class="cont1">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div> -->
+<span style="font-size:30px" onclick="openNav()">&#9776;</span>
+  <script>
+    function myFunction()
+     {
+      var x = document.getElementById("fname");
+var div = document.getElementById('divID');
+div.innerHTML = x.value;    
+     }
+ </script>
+ 
+ Enter your name: <input type="text" id="fname"> <button onclick="myFunction(), document.getElementById('fname').value = ''">Submit</button>
+ <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+ 
+ <div id="divID"></div>
+
+  <script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}</script>
+   
+</body>
+</html>
